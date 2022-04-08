@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        td{
+            border: 1px solid black;
+        }
+        td{
+            text-align: right;
+        }
+        table{
+            margin: auto;
+            height: 800px;
+            width: 800px;
+        }
+        button{
+            width: 100px;
+            height: 25px;
+            margin: auto;
+        }
+        </style>
+        <script type="text/javascript" src="index.js"></script>
+
+    </head>
+    <body>
+        <p id="timer"></p>
+        <p>Select difficulty level</p>
+        <select id="option">
+            <option value="3">3 seconds to memorize</option>
+            <option value="5">5 seconds to memorize</option>
+            <option value="8">8 seconds to memorize</option>
+        </select>
+        <p>Select the number of pictures</p>
+        <select id="pics">
+            <option value="8">8 </option>
+            <option value="10">10 </option>
+            <option value="12">12 </option>
+        </select>
+        <table id="table">
+            <tr>
+                <td id="1" onclick="reveal('1')"></td>
+                <td id="2" onclick="reveal('2')"></td>
+                <td id="3" onclick="reveal('3')"></td>
+                <td id="4" onclick="reveal('4')"></td>
+            </tr>
+            <tr>
+                <td id="5" onclick="reveal('5')"></td>
+                <td id="6" onclick="reveal('6')"></td>
+                <td id="7" onclick="reveal('7')"></td>
+                <td id="8" onclick="reveal('8')"></td>
+            </tr>
+            <tr>
+                <td id="9" onclick="reveal('9')"></td>
+                <td id="10" onclick="reveal('10')"></td>
+                <td id="11" onclick="reveal('11')"></td>
+                <td id="12" onclick="reveal('12')"></td>
+            </tr>
+            <tr>
+                <td id="13" onclick="reveal('13')"></td>
+                <td id="14" onclick="reveal('14')"></td>
+                <td id="15" onclick="reveal('15')"></td>
+                <td id="16" onclick="reveal('16')"></td>
+            </tr>
+        </table>
+        <div>
+            <button onclick="play()">Play</button>
+        </div>
+        <p>To play the game, select the difficulty level, and the set number of pictures that the pictures will be picked from.<br>
+        Then click play. You'll be shown a 16 pictures, will be matching and others will be unique. You task is try to remember the matching ones.<br>
+    Click on the grid to reveal the pictures.</p>
+    </body>
+</html>
